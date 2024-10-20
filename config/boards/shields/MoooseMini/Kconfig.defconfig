@@ -1,0 +1,6 @@
+if SHIELD_MoooseMini
+
+config ZMK_KEYBOARD_NAME
+    default "MoooseMini"
+
+endif
