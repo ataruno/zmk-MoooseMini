@@ -1,6 +1,5 @@
-# zmk-MoooseTB_Charlieplex
+# zmk-MoooseMini
 ## 構成
-* matrix(col2row)
 * PMW3610
 * Rotary Encoder
 * zmk-rgbled-widget
