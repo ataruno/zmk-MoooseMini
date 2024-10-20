@@ -57,11 +57,9 @@
 
         default_layer {
             bindings = <
-                &kp A   &kp B   &kp C   &kp D   &kp D   &kp D       &kp E   &kp F   &kp G   &kp H   &kp H   &kp H
-                &kp Q   &kp W   &kp E   &kp R   &kp R   &kp R       &kp Q   &kp Q   &kp Q   &kp Q   &kp Q   &kp Q
-                &kp A   &kp S   &kp D   &kp F   &kp F   &kp F       &kp A   &kp A   &kp A   &kp A   &kp A   &kp A
-                &kp A   &kp S   &kp D   &kp F   &kp F   &kp F       &kp A   &kp A   &kp A   &kp A   &kp A   &kp A
-                &kp A   &kp S   &kp D   &kp F   &kp F   &kp F       &kp A   &kp A   &kp A   &kp A   &kp A   &kp A
+                &kp A   &kp B   &kp C
+                &kp Q   &kp W   &kp E
+                &kp J   &kp S   &kp D
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
