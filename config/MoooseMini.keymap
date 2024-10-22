@@ -53,30 +53,17 @@
 
 / {
 
-    macros {
-        my_one: my_one {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mouse_scroll_up>;
-        };
-        my_two: my_two {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            bindings = <&mouse_scroll_down>;
-        };
-
-    };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &bootloader  &mkp LCLK   &my_one
+                &bootloader  &mkp LCLK   &kp ENTER
                 &none        &mkp RCLK   &lt 1 SPACE
                 &none        &mkp MCLK   &lt 2 ENTER
             >;
-            sensor-bindings = <&inc_dec_kp  C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         ARROW {
