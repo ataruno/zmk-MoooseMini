@@ -61,7 +61,7 @@
         };
         my_macro: my_two {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             bindings = <&mouse_scroll_down>;
         };
 
