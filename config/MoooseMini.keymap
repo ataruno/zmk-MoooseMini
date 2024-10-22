@@ -50,7 +50,22 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
 
+
 / {
+
+    macros {
+        my_macro: my_one {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mouse_scroll_up>;
+        };
+        my_macro: my_two {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mouse_scroll_down>;
+        };
+
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -61,7 +76,7 @@
                 &none        &mkp RCLK   &lt 1 SPACE
                 &none        &mkp MCLK   &lt 2 ENTER
             >;
-            sensor-bindings = <&inc_dec_kp &mouse_scroll_up &mouse_scroll_down>;
+            sensor-bindings = <&inc_dec_kp my_one my_two>;
         };
 
         ARROW {
