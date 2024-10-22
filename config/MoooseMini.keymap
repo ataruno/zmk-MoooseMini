@@ -61,7 +61,6 @@
                 &none        &mkp RCLK   &lt 1 SPACE
                 &none        &mkp MCLK   &lt 2 ENTER
             >;
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         ARROW {
@@ -70,7 +69,6 @@
                 &none           &kp RIGHT_ARROW   &kp KP_NUMBER_5
                 &none           &kp UP_ARROW      &kp KP_NUMBER_6
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         NUM {
@@ -79,7 +77,40 @@
                 &none           &kp KP_NUMBER_2   &kp KP_NUMBER_5
                 &none           &kp KP_NUMBER_3   &kp KP_NUMBER_6
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+
+        };
+    };
+
+
+    encoder_0: encoder@0 {
+        compatible = "zmk,behavior-encoder";
+        label = "ENCODER_0";
+
+        bindings {
+            clockwise = <&mouse_scroll_up>;
+            counterclockwise = <&mouse_scroll_down>;
+        };
+    };
+
+    // ARROWレイヤーでのエンコーダ設定
+    encoder_1: encoder@1 {
+        compatible = "zmk,behavior-encoder";
+        label = "ENCODER_1";
+
+        bindings {
+            clockwise = <&kp C_VOL_UP>;
+            counterclockwise = <&kp C_VOL_DN>;
+        };
+    };
+
+    // NUMレイヤーでのエンコーダ設定
+    encoder_2: encoder@2 {
+        compatible = "zmk,behavior-encoder";
+        label = "ENCODER_2";
+
+        bindings {
+            clockwise = <&kp PAGE_UP>;
+            counterclockwise = <&kp PAGE_DOWN>;
         };
     };
 };
