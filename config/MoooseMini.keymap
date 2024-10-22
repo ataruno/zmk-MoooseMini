@@ -57,7 +57,7 @@
 
         default_layer {
             bindings = <
-                &kp d   &mkp LCLK   &kp ENTER
+                &kp D   &mkp LCLK   &kp ENTER
                 &none   &mkp RCLK   &lt 2 SPACE
                 &none   &mkp MCLK   &lt 2 ENTER
             >;
