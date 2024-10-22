@@ -72,11 +72,11 @@
 
         default_layer {
             bindings = <
-                &bootloader  &mkp LCLK   &kp ENTER
+                &bootloader  &mkp LCLK   &kp my_one
                 &none        &mkp RCLK   &lt 1 SPACE
                 &none        &mkp MCLK   &lt 2 ENTER
             >;
-            sensor-bindings = <&inc_dec_kp my_one my_two>;
+            sensor-bindings = <&inc_dec_kp  C_VOL_DN C_VOL_UP>;
         };
 
         ARROW {
