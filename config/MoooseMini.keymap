@@ -72,7 +72,7 @@
 
         default_layer {
             bindings = <
-                &bootloader  &mkp LCLK   &kp my_one
+                &bootloader  &mkp LCLK   &my_one
                 &none        &mkp RCLK   &lt 1 SPACE
                 &none        &mkp MCLK   &lt 2 ENTER
             >;
