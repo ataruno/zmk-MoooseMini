@@ -93,7 +93,7 @@
             bindings = <
                 &bt BT_SEL 1    &kp LA(F16)   &kp LA(F19)
                 &none           &kp LA(F17)   &none
-                &none           &kp LA(F18)   &kp LA(F20)
+                &none           &kp LA(F18)   &bootloader
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
