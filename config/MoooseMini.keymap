@@ -56,7 +56,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &lt 4 ESC   &mkp LCLK   &lt 1 ENTER
+                &bootloader   &mkp LCLK   &lt 1 ENTER
                 &none         &mkp RCLK   &lt 2 SPACE
                 &none         &mkp MCLK   &lt 3 ESC
             >;
@@ -66,7 +66,7 @@
             bindings = <
                 &trans       &kp LA(F13)   &none
                 &none        &kp LA(F14)   &kp LA(F16)
-                &none        &kp LA(F15)   &bootloader
+                &none        &kp LA(F15)   &to 4
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -88,9 +88,9 @@
         };
         NUMB {
             bindings = <
-                &trans          &none            &bt BT_SEL 0
-                &none           &none            &bt BT_SEL 1
-                &none           &bt BT_CLR_ALL   &bt BT_SEL 2
+                &trans          &bt BT_SEL 3    &ENTER
+                &none           &bt BT_SEL 4    &bt BT_SEL 0
+                &none           &bt BT_CLR_ALL  &bt BT_SEL 1
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
