@@ -58,7 +58,7 @@
 
         default_layer {
             bindings = <
-                &lt 4 ENTER    &mkp LCLK   &lt 1 ENTER
+                &bootloader   &mkp LCLK   &lt 1 ENTER
                 &none          &mkp RCLK   &lt 2 SPACE
                 &none          &mkp MCLK   &lt 3 ESC
             >;
@@ -88,15 +88,6 @@
                 &trans          &kp LEFT       &kp UP
                 &none           &kp RIGHT      &kp DOWN
                 &none           &kp LG(T)      &none
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        BLUE {
-            bindings = <
-                &none           &bootloader    &bt BT_SEL 0
-                &none           &bt BT_CLR_ALL &bt BT_SEL 1
-                &none           &bootloader    &bt BT_SEL 2
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
