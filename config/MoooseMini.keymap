@@ -66,7 +66,7 @@
             bindings = <
                 &trans       &kp LA(F13)   &none
                 &none        &kp LA(F14)   &kp LA(F16)
-                &none        &kp LA(F15)   &none
+                &none        &kp LA(F15)   &bootloader
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -88,7 +88,7 @@
         };
         NUMB {
             bindings = <
-                &trans          &bootloader      &bt BT_SEL 0
+                &trans          &none            &bt BT_SEL 0
                 &none           &none            &bt BT_SEL 1
                 &none           &bt BT_CLR_ALL   &bt BT_SEL 2
             >;
