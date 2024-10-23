@@ -8,7 +8,7 @@
 #define UPPER 1
 #define MID 2
 #define LOWER 3
-#define BLEL 4
+#define NUMB 4
 // #define SCROLL 5
 // #define layer_6 6
 
@@ -75,9 +75,9 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &lt_to_layer_0 4 C_MUTE  &mkp LCLK   &lt_to_layer_0 1 ENTER
-                &none                    &mkp RCLK   &lt_to_layer_0 2 SPACE
-                &none                    &mkp MCLK   &lt_to_layer_0 3 ESC
+                &bt BT_SEL 0  &mkp LCLK   &lt_to_layer_0 1 ENTER
+                &none         &mkp RCLK   &lt_to_layer_0 2 SPACE
+                &none         &mkp MCLK   &lt_to_layer_0 3 ESC
             >;
             sensor-bindings = <&inc_dec_kp C_PLAY_PAUSE KP_ENTER>;
         };
@@ -104,14 +104,6 @@
                 &none           &kp LG(T)      &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-        BLEL {
-            bindings = <
-                &none    &bt BT_CLR         &bt BT_SEL 0
-                &none    &bt BT_CLR_ALL     &bt BT_SEL 1
-                &none    &bootloader        &bt BT_SEL 2
-            >;
-            sensor-bindings = <&inc_dec_kp B B>;
         };
     };
 };
