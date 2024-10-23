@@ -64,15 +64,15 @@
         };
         UPPER {
             bindings = <
-                &trans       &kp LA(F13)   &none
+                &mo 4       &kp LA(F13)   &none
                 &none        &kp LA(F14)   &kp LA(F16)
-                &none        &kp LA(F15)   &to 4
+                &none        &kp LA(F15)   &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         MID {
             bindings = <
-                &trans          &kp LA(F17)   &kp LA(F20)
+                &none          &kp LA(F17)   &kp LA(F20)
                 &none           &kp LA(F18)   &none
                 &none           &kp LA(F19)   &none
             >;
@@ -80,7 +80,7 @@
         };
         LOWER {
             bindings = <
-                &trans          &kp LEFT       &kp UP
+                &none          &kp LEFT       &kp UP
                 &none           &kp RIGHT      &kp DOWN
                 &none           &kp LG(T)      &none
             >;
@@ -88,7 +88,7 @@
         };
         NUMB {
             bindings = <
-                &trans          &bt BT_SEL 3    &kp ENTER
+                &none          &bt BT_SEL 3    &kp ENTER
                 &none           &bt BT_SEL 4    &bt BT_SEL 0
                 &none           &bt BT_CLR_ALL  &bt BT_SEL 1
             >;
