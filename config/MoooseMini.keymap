@@ -60,7 +60,7 @@
                 &none         &mkp RCLK   &lt 2 SPACE
                 &none         &mkp MCLK   &lt 3 ESC
             >;
-            sensor-bindings = <&inc_dec_kp KC_MS_WH_UP KC_MS_WH_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_PLAY_PAUSE LA(C_PLAY_PAUSE)>;
         };
         UPPER {
             bindings = <
