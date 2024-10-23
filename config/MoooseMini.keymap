@@ -79,7 +79,7 @@
                 &none         &mkp RCLK   &lt_to_layer_0 2 SPACE
                 &none         &mkp MCLK   &lt_to_layer_0 3 ESC
             >;
-            sensor-bindings = <&inc_dec_kp C_PLAY_PAUSE LA(C_PLAY_PAUSE)>;
+            sensor-bindings = <&inc_dec_kp C_PLAY_PAUSE KP_EQUAL>;
         };
         UPPER {
             bindings = <
