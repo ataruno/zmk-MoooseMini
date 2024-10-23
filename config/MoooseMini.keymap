@@ -62,7 +62,7 @@
                 &none          &mkp RCLK   &lt 2 SPACE
                 &none          &mkp MCLK   &lt 3 ESC
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LA(F21) LA(F22)>;
         };
 
         UPPER {
