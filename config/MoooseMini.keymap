@@ -5,10 +5,10 @@
 #include <behaviors/rgbled_widget.dtsi>
 
 // Leyer
-// #define UPPER 1
-// #define MID 2
-// #define LOWER 3
-// #define BLUETOOTH 4
+#define UPPER 1
+#define MID 2
+#define LOWER 3
+#define BLUETOOTH 4
 // #define SCROLL 5
 // #define layer_6 6
 
