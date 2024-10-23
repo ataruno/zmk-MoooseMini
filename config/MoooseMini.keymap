@@ -8,7 +8,7 @@
 #define UPPER 1
 #define MID 2
 #define LOWER 3
-#define BLUE 4
+// #define BLUE 4
 // #define SCROLL 5
 // #define layer_6 6
 
@@ -52,24 +52,22 @@
 
 
 / {
-
     keymap {
         compatible = "zmk,keymap";
-
         default_layer {
             bindings = <
                 &bootloader   &mkp LCLK   &lt 1 ENTER
-                &none          &mkp RCLK   &lt 2 SPACE
-                &none          &mkp MCLK   &lt 3 ESC
+                &none         &mkp RCLK   &lt 2 SPACE
+                &none         &mkp MCLK   &lt 3 ESC
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         UPPER {
             bindings = <
-                &trans          &kp LA(F13)   &none
-                &none           &kp LA(F14)   &kp LA(F16)
-                &none           &kp LA(F15)   &none
+                &trans       &kp LA(F13)   &none
+                &none        &kp LA(F14)   &kp LA(F16)
+                &none        &kp LA(F15)   &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
