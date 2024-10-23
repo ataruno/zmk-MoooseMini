@@ -53,7 +53,6 @@
 
 / {
 
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,7 +62,7 @@
                 &none          &mkp RCLK   &lt 2 SPACE
                 &none          &mkp MCLK   &lt 3 ESC
             >;
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         UPPER {
