@@ -88,7 +88,7 @@
         };
         NUMB {
             bindings = <
-                &trans          &bt BT_SEL 3    &ENTER
+                &trans          &bt BT_SEL 3    &kp ENTER
                 &none           &bt BT_SEL 4    &bt BT_SEL 0
                 &none           &bt BT_CLR_ALL  &bt BT_SEL 1
             >;
