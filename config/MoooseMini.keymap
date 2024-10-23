@@ -84,16 +84,16 @@
         UPPER {
             bindings = <
                 &bt BT_SEL 1 &kp LA(F13)   &none
-                &none        &kp LA(F14)   &kp LA(F16)
-                &none        &kp LA(F15)   &none
+                &none        &kp LA(F14)   &ind_bat
+                &none        &kp LA(F15)   &ind_con
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         MID {
             bindings = <
-                &bt BT_SEL 1    &kp LA(F17)   &kp LA(F20)
-                &none           &kp LA(F18)   &none
-                &none           &kp LA(F19)   &none
+                &bt BT_SEL 1    &kp LA(F16)   &kp LA(F19)
+                &none           &kp LA(F17)   &none
+                &none           &kp LA(F18)   &kp LA(F20)
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
