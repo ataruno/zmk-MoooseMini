@@ -103,7 +103,7 @@
                 &none           &kp RIGHT      &kp DOWN
                 &none           &kp LG(T)      &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_MUTE C_MUTE>;
         };
     };
 };
