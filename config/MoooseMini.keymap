@@ -83,7 +83,7 @@
         };
         UPPER {
             bindings = <
-                &bt BT_SEL 1 &kp LA(F13)   &none
+                &bootloader  &kp LA(F13)   &none
                 &none        &kp LA(F14)   &ind_bat
                 &none        &kp LA(F15)   &ind_con
             >;
@@ -93,7 +93,7 @@
             bindings = <
                 &bt BT_SEL 1    &kp LA(F16)   &kp LA(F19)
                 &none           &kp LA(F17)   &none
-                &none           &kp LA(F18)   &bootloader
+                &none           &kp LA(F18)   &kp C_MUTE
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
