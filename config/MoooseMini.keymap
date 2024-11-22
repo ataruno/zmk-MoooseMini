@@ -91,7 +91,7 @@
         };
         MID {
             bindings = <
-                &bt BT_SEL 1    &kp LA(F16)   &kp LA(F19)
+                &bt BT_SEL 2    &kp LA(F16)   &kp LA(F19)
                 &none           &kp LA(F17)   &none
                 &none           &kp LA(F18)   &bootloader
             >;
@@ -99,7 +99,7 @@
         };
         LOWER {
             bindings = <
-                &bt BT_SEL 1    &kp LEFT       &kp UP
+                &bt BT_CLR      &kp LEFT       &kp UP
                 &none           &kp RIGHT      &kp DOWN
                 &none           &kp LG(T)      &none
             >;
