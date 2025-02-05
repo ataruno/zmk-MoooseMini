@@ -1,4 +1,3 @@
-name: MoooseMini
 build:
   settings:
-    board_root: config
+    board_root: .
