@@ -1,7 +1,0 @@
-if SHIELD_TEST_R
-
-config ZMK_KEYBOARD_NAME
-    default "Test_R"
-
-endif
-

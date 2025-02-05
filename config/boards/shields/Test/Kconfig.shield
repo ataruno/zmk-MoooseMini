@@ -1,2 +1,0 @@
-config SHIELD_TEST_R
-    def_bool $(shields_list_contains,Test_R)
