@@ -1,8 +1,0 @@
-file_format: "1"
-id: MoooseMini
-name: MoooseMini
-type: shield
-url: https://github.com/ataruno/zmk-config
-requires: [seeeduino_xiao_ble]
-features:
-  - keys
