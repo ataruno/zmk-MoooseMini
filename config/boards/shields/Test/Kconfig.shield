@@ -1,5 +1,2 @@
 config SHIELD_TEST_R
     def_bool $(shields_list_contains,Test_R)
-
-config SHIELD_TEST_L
-    def_bool $(shields_list_contains,Test_L)
