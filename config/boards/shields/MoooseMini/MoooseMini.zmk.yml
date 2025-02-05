@@ -1,8 +1,13 @@
 file_format: "1"
-id: test
+id: MoooseMini
 name: MoooseMini
 type: shield
 url: https://github.com/ataruno/zmk-MoooseMini
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - encoder
+  - pointer
+  - studio
+  siblings:
+  - MoooseMini
