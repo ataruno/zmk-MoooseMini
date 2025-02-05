@@ -3,25 +3,25 @@
 
 / {
     chosen {
-        zmk,physical-layout = &roba_physical_layout;
+        zmk,physical-layout = &MoooseMini_physical_layout;
     };
 
-    roba_physical_layout: roba_physical_layout {
+    MoooseMini_physical_layout: MoooseMini_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0   37       0     0     0>
-            , <&key_physical_attrs 100 100  100   12       0     0     0>
-            , <&key_physical_attrs 100 100  200    0       0     0     0>
-            , <&key_physical_attrs 100 100  300   12       0     0     0>
-            , <&key_physical_attrs 100 100  400   24       0     0     0>
-            , <&key_physical_attrs 100 100  800   24       0     0     0>
-            , <&key_physical_attrs 100 100  900   12       0     0     0>
-            , <&key_physical_attrs 100 100 1000    0       0     0     0>
-            , <&key_physical_attrs 100 100 1100   12       0     0     0>
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100   15   90       0     0     0>
+            , <&key_physical_attrs 100 100   15  180       0     0     0>
+            , <&key_physical_attrs 100 100  100   90       0     0     0>
+            , <&key_physical_attrs 100 100  250    0       0     0     0>
+            , <&key_physical_attrs 100 100  250   90       0     0     0>
+            , <&key_physical_attrs 100 100  250  180       0     0     0>
+            , <&key_physical_attrs 100 100  450   90       0     0     0>
+            , <&key_physical_attrs 100 100  450  180       0     0     0>
             ;
     };
 
@@ -48,6 +48,10 @@
     };
 
     right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
         status = "disabled";
     };
 
