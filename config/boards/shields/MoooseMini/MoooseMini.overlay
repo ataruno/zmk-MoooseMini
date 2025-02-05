@@ -1,5 +1,6 @@
 #include "MoooseMini.dtsi"
 
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH> //Col0
@@ -57,6 +58,8 @@
         };
     };
 };
+
+&xiao_serial { status = "disabled"; };
 
 &spi0 {
     status = "okay";
