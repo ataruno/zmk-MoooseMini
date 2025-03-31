@@ -44,7 +44,7 @@
             bindings = <
                 &kp A                   &lt_to_layer_0 1 ENTER
                 &mkp LCLK   &mkp RCLK   &lt_to_layer_0 2 SPACE
-                &mkp MCLK   &kp C       &lt_to_layer_0 3 ESC
+                &mkp MCLK   &kp D       &lt_to_layer_0 3 ESC
                                         &kp B
             >;
             sensor-bindings = <&inc_dec_kp C_PLAY_PAUSE KP_ENTER>;
