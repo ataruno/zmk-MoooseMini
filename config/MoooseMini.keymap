@@ -42,33 +42,37 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &bt BT_SEL 0  &mkp LCLK   &lt_to_layer_0 1 ENTER
-                &none         &mkp RCLK   &lt_to_layer_0 2 SPACE
-                &none         &mkp MCLK   &lt_to_layer_0 3 ESC
+                &kp A                   &lt_to_layer_0 1 ENTER
+                &mkp LCLK   &mkp RCLK   &lt_to_layer_0 2 SPACE
+                &mkp MCLK   &kp C       &lt_to_layer_0 3 ESC
+                                        &kp B
             >;
             sensor-bindings = <&inc_dec_kp C_PLAY_PAUSE KP_ENTER>;
         };
         UPPER {
             bindings = <
-                &bt BT_SEL 1 &kp LA(F13)   &none
+                &bt BT_SEL 1               &none
                 &none        &kp LA(F14)   &none
                 &none        &kp LA(F15)   &none
+                                           &kp LA(F13)
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         MID {
             bindings = <
-                &bt BT_SEL 2    &kp LA(F16)   &kp LA(F19)
+                &bt BT_SEL 2                  &kp LA(F19)
                 &none           &kp LA(F17)   &none
                 &none           &kp LA(F18)   &bootloader
+                                              &kp LA(F16)
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         LOWER {
             bindings = <
-                &bt BT_CLR      &kp LEFT       &kp UP
+                &bt BT_CLR                     &kp UP
                 &none           &kp RIGHT      &kp DOWN
                 &none           &kp LG(T)      &none
+                                               &kp LEFT
             >;
             sensor-bindings = <&inc_dec_kp C_MUTE C_MUTE>;
         };
