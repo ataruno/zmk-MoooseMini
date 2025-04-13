@@ -60,10 +60,10 @@
         };
         MID {
             bindings = <
-                &none                       &none
-                &LEFT           &kp UP      &none
-                &DOWN           &kp RIGHT   &none
-                                            &none
+                &none                    &none
+                &kp LEFT     &kp UP      &none
+                &kp DOWN     &kp RIGHT   &none
+                                         &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
