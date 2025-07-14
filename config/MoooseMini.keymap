@@ -97,12 +97,12 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp A                   &lt_to_layer_0 1 Y
+                &kp C_MUTE              &lt_to_layer_0 1 Y
                 &mkp LCLK   &mkp RCLK   &lt_to_layer_0 2 H
                 &mkp MCLK   &kp D       &lt_to_layer_0 3 N
                                         &lt_to_layer_0 4 A
             >;
-            sensor-bindings = <&mouse_scroll SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
         UPPER {
             bindings = <
