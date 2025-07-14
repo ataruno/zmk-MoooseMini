@@ -5,7 +5,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors/rgbled_widget.dtsi>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100   //スクロール量
+#undef ZMK_POINTING_DEFAULT_SCRL_VAL
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // スクロール量を10→100に変更
 
 // Leyer
 #define UPPER 1
