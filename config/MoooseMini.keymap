@@ -75,6 +75,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+        rot_mkp: sensor_rotate_mkp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&mkp>, <&mkp>;
+        };
         mouse_scroll: mouse_wheel_scrl{
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
