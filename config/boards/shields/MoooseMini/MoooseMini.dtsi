@@ -46,7 +46,7 @@
             input-processors = <&zip_xy_scaler 1 3>;
         };
         snipe_2 {
-            layers = <MID>;
+            layers = <TACT>;
             input-processors = <&zip_xy_scaler 1 3>;
         };
         scroller_1 {
@@ -54,7 +54,7 @@
             input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,  <&zip_xy_scaler 1 30 >, <&zip_xy_to_scroll_mapper>;
         };
         scroller_2 {
-            layers = <TACT>;
+            layers = <MID>;
             input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,  <&zip_xy_scaler 1 30 >, <&zip_xy_to_scroll_mapper>;
         };
 
