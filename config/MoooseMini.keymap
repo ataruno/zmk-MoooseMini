@@ -97,48 +97,48 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                &kp C_MUTE              &lt_to_layer_0 1 Y
-                &mkp LCLK   &mkp RCLK   &lt_to_layer_0 2 H
-                &mkp MCLK   &kp D       &lt_to_layer_0 3 N
-                                        &lt_to_layer_0 4 A
+                &kp C_MUTE              &lt_to_layer_0 1 ESC
+                &mkp LCLK   &mkp RCLK   &lt_to_layer_0 2 ENTER
+                &mkp MCLK   &kp D       &lt_to_layer_0 3 SPACE
+                                        &lt_to_layer_0 4 ESC
             >;
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
         UPPER {
             bindings = <
-                &kp A                      &kp Y
-                &kp LEFT     &kp UP        &kp H
-                &kp DOWN     &kp RIGHT     &kp N
-                                           &none
+                &kp 1                           &kp ESC
+                &kp LC(LS(TAB))   &kp LC(T)     &kp ENTER
+                &kp LC(W)         &kp LC(TAB)   &kp SPACE
+                                                &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
         MID {
             bindings = <
-                &kp A                      &kp Y
-                &kp LEFT     &kp UP        &kp H
-                &kp DOWN     &kp RIGHT     &kp N
+                &kp 2                      &kp ESC
+                &kp LEFT     &kp UP        &kp ENTER
+                &kp DOWN     &kp RIGHT     &kp SPACE
                                            &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         LOWER {
             bindings = <
-                &kp A                      &kp Y
-                &kp LEFT     &kp UP        &kp H
-                &kp DOWN     &kp RIGHT     &kp N
-                                           &none
+                &kp 3                            &kp ESC
+                &kp LG(LEFT)     &kp LG(UP)      &kp ENTER
+                &kp LG(DOWN)     &kp LG(RIGHT)   &kp SPACE
+                                                 &none
             >;
-            sensor-bindings = <&inc_dec_kp C_MUTE C_MUTE>;
+            sensor-bindings = <&inc_dec_kp LS(SCRL_DOWN) LS(SCRL_UP)>;
         };
         TACT {
             bindings = <
-                &bootloader                        &bt BT_SEL 1
-                &bt BT_CLR_ALL      &bt BT_SEL 4   &bt BT_SEL 2
-                &bt BT_CLR          &bt BT_SEL 5   &bt BT_SEL 3
-                                                   &none
+                &bootloader                     &bt BT_SEL 1
+                &bt BT_CLR_ALL   &bt BT_SEL 4   &bt BT_SEL 2
+                &bt BT_CLR       &bt BT_SEL 5   &bt BT_SEL 3
+                                                &none
             >;
-            sensor-bindings = <&inc_dec_kp C_MUTE C_MUTE>;
+            sensor-bindings = <&inc_dec_kp SCRL_DOWN SCRL_UP>;
         };
     };
 
