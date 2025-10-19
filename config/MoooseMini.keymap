@@ -129,7 +129,7 @@
                 &kp LG(DOWN)     &kp LG(RIGHT)   &kp SPACE
                                                  &none
             >;
-            sensor-bindings = <&inc_dec_kp LS(SCRL_DOWN) LS(SCRL_UP)>;
+            sensor-bindings = <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
         };
         TACT {
             bindings = <
@@ -138,7 +138,7 @@
                 &bt BT_CLR       &bt BT_SEL 5   &bt BT_SEL 3
                                                 &none
             >;
-            sensor-bindings = <&inc_dec_kp SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
     };
 
