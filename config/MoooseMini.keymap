@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors/rgbled_widget.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
-#undef ZMK_POINTING_DEFAULT_SCRL_VAL
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // スクロール量を10→100に変更
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // Leyer
 #define UPPER 1
@@ -52,10 +52,6 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
 
 / {
     macros {
